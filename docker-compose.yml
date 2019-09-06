@@ -5,8 +5,8 @@ services:
     build: .
     #    image: ubuntu:14.04
     volumes:
-      - /projetcs/apps:/apps
-    working_dir: /apps
+      - /projects:/projects
+    working_dir: /projects
 #    ports:
 #      - "8100:8100"
 #    command: ["/usr/local/bin/ionic", "serve", "--no-open"]
