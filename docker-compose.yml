@@ -1,9 +1,7 @@
 version: '3'
 services:
   app:
-    #    image: agileek/ionic-framework
-    build: .
-    #    image: ubuntu:14.04
+    image: codexten/ionic
     volumes:
       - /projects:/projects
     working_dir: /projects
