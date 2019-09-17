@@ -1,10 +1,14 @@
 version: '3'
 services:
   app:
-    image: codexten/ionic
+    build: .
+#    image: codexten/ionic
+#    image: agileek/ionic-framework
     volumes:
       - /projects:/projects
     working_dir: /projects
-#    ports:
-#      - "8100:8100"
-#    command: ["/usr/local/bin/ionic", "serve", "--no-open"]
+#    environment:
+#      - IONIC_VERSION=5.2.8
+    ports:
+      - 8100:8100
+#    command: ["tail -f /dev/null"]
